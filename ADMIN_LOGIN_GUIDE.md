@@ -5,7 +5,7 @@
 ### **Default Credentials** (Work Immediately)
 
 ```
-Email:    admin@carbronze.com
+Email:    admin@trueinspectify.com
 Password: Admin123@Secure
 ```
 
@@ -59,7 +59,7 @@ http://localhost:3000/admin/login
    ```
 
 2. **Enter Credentials:**
-   - Email: `admin@carbronze.com`
+   - Email: `admin@trueinspectify.com`
    - Password: `Admin123@Secure`
 
 3. **Click Login**
@@ -134,7 +134,7 @@ npm run dev
 
 ### Try Default Credentials First:
 ```
-Email: admin@carbronze.com
+Email: admin@trueinspectify.com
 Password: Admin123@Secure
 ```
 
@@ -145,7 +145,7 @@ Password: Admin123@Secure
 | Item | Value |
 |------|-------|
 | Login URL | http://localhost:3000/admin/login |
-| Default Email | admin@carbronze.com |
+| Default Email | admin@trueinspectify.com |
 | Default Password | Admin123@Secure |
 | Token Storage | localStorage (admin_token) |
 | Dashboard URL | /admin/dashboard |
