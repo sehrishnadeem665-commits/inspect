@@ -1,0 +1,21 @@
+<IfModule mod_authz_core.c>
+  # Deny direct access to sensitive dot-files
+  <FilesMatch "^(\.env|\.git|\.htaccess)$">
+    Require all denied
+  </FilesMatch>
+</IfModule>
+
+<IfModule !mod_authz_core.c>
+  <Files ".env">
+    Order allow,deny
+    Deny from all
+  </Files>
+  <Files ".htaccess">
+    Order allow,deny
+    Deny from all
+  </Files>
+</IfModule>
+Options -Indexes
+
+# Ensure a sensible directory index (fallback for static sites)
+DirectoryIndex index.html index.php

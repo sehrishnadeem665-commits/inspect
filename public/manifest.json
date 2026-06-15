@@ -1,0 +1,38 @@
+{
+  "name": "True Inspectify - Vehicle History Reports",
+  "short_name": "True Inspectify",
+  "description": "Check any car's history in seconds. Get comprehensive vehicle reports from 900+ global data sources.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["automotive", "lifestyle"],
+  "screenshots": [
+    {
+      "src": "/banner-hero.png",
+      "sizes": "1200x630",
+      "type": "image/png"
+    }
+  ]
+}

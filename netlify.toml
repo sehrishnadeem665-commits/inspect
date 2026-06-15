@@ -1,0 +1,9 @@
+# This file is for Netlify deployment only
+# For Hostinger deployment, use HOSTINGER_DEPLOYMENT.md
+
+[build]
+command = "npm run build"
+publish = ".next/standalone"
+
+[[plugins]]
+package = "@netlify/plugin-nextjs"

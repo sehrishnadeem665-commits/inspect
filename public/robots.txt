@@ -1,0 +1,23 @@
+# True Inspectify robots.txt
+# Generated dynamically by Next.js
+# This file is a fallback - primary source is /api/robots.ts
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /checkout/
+Disallow: /*.json$
+
+# Specific crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Delay for aggressive crawlers
+User-agent: MJ12bot
+Crawl-delay: 10
+
+Sitemap: https://trueautocheck.com/sitemap.xml

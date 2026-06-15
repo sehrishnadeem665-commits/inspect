@@ -1,0 +1,19 @@
+{
+  "nav_home": "Αρχική",
+  "nav_pricing": "Τιμολόγηση",
+  "nav_contact": "Επικοινωνία",
+  "nav_about": "Σχετικά",
+  "select_country": "Επιλέξτε χώρα",
+  "search_placeholder": "Πληκτρολογήστε για αναζήτηση",
+  "banner_get_report": "Λήψη αναφοράς",
+  "banner_no_vin": "Δεν έχω VIN",
+  "banner_input_placeholder": "Εισαγάγετε VIN",
+  "vin_get_report": "Λήψη αναφοράς",
+  "vin_no_vin_alert": "Παρακαλώ εισαγάγετε VIN για να συνεχίσετε",
+  "vin_placeholder": "1VWBN7A35CCXXXXXX",
+  "form_title": "Λάβετε την αναφορά σας",
+  "form_cancel": "Ακύρωση",
+  "form_continue": "Συνέχεια στην πληρωμή",
+  "form_cod": "Αντικαταβολή",
+  "payment_complete": "Ολοκληρώστε την πληρωμή"
+}

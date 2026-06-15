@@ -1,0 +1,17 @@
+# Safe .htaccess example: only deny direct access to .env and allow normal site traffic
+<IfModule mod_authz_core.c>
+  <FilesMatch "^\.env$">
+    Require all denied
+  </FilesMatch>
+</IfModule>
+<IfModule !mod_authz_core.c>
+  <Files ".env">
+    Order allow,deny
+    Deny from all
+  </Files>
+</IfModule>
+
+# If you're serving a static site fallback ensure DirectoryIndex is set
+DirectoryIndex index.html index.php
+
+# Note: Do NOT copy other restrictive rules here unless you understand them.

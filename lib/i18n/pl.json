@@ -1,0 +1,19 @@
+{
+  "nav_home": "Strona główna",
+  "nav_pricing": "Cennik",
+  "nav_contact": "Kontakt",
+  "nav_about": "O nas",
+  "select_country": "Wybierz kraj",
+  "search_placeholder": "Wpisz, aby wyszukać",
+  "banner_get_report": "Pobierz raport",
+  "banner_no_vin": "Nie mam VIN",
+  "banner_input_placeholder": "Wprowadź VIN",
+  "vin_get_report": "Pobierz raport",
+  "vin_no_vin_alert": "Wprowadź VIN, aby kontynuować",
+  "vin_placeholder": "1VWBN7A35CCXXXXXX",
+  "form_title": "Uzyskaj raport",
+  "form_cancel": "Anuluj",
+  "form_continue": "Przejdź do płatności",
+  "form_cod": "Płatność przy odbiorze",
+  "payment_complete": "Zakończ płatność"
+}
