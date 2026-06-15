@@ -2,9 +2,6 @@
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 // Import Swiper core and required modules
 import SwiperCore from "swiper";
@@ -16,7 +13,7 @@ import { useState, useEffect } from 'react'
 import GetReportForm from './GetReportForm'
 import { useTranslations } from '@/lib/translations'
 SwiperCore.use([Navigation, Autoplay]);
-export default function WhyCarBronze() {
+export default function WhyTrueInspectify() {
   const [isFormOpen, setIsFormOpen] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
   const { t } = useTranslations()

@@ -16,13 +16,13 @@ export async function POST(request: Request) {
     console.log('\n🔐 Login attempt with username:', username);
 
     // PRIMARY: Use environment variables for admin credentials (works immediately on Hostinger)
-    const envAdminEmail = process.env.ADMIN_EMAIL || 'admin@carbronze.com';
+    const envAdminEmail = process.env.ADMIN_EMAIL || 'admin@trueinspectify.com';
     const envAdminPass = process.env.ADMIN_PASSWORD || process.env.TEST_ADMIN_PASS || 'Admin123@Secure';
 
     console.log('✓ Checking against env credentials');
 
     // Match with environment-based credentials
-    if ((username === envAdminEmail || username === 'admin@carbronze.com') && password === envAdminPass) {
+    if ((username === envAdminEmail || username === 'admin@trueinspectify.com') && password === envAdminPass) {
       console.log('✅ SUCCESS: Environment credentials matched!');
       const token = generateToken(username)
       return NextResponse.json({ token, success: true })

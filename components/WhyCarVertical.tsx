@@ -2,7 +2,7 @@ import { ShieldAlert, CheckCircle, TrendingDown } from 'lucide-react'
 import Image from 'next/image'
 import { getTranslationsForLang } from '@/lib/translations'
 
-export default async function WhyCarBronze() {
+export default async function WhyTrueInspectify() {
   // Resolve language robustly (handle different shapes of next/headers in various runtimes)
   let lang = 'en'
   try {
@@ -31,7 +31,7 @@ export default async function WhyCarBronze() {
       if (match) lang = decodeURIComponent(match[1])
     }
   } catch (e) {
-    if (process.env.NODE_ENV !== 'production') console.warn('[i18n] Could not read cookies/headers in WhyCarBronze:', e)
+    if (process.env.NODE_ENV !== 'production') console.warn('[i18n] Could not read cookies/headers in WhyTrueInspectify:', e)
   }
 
   const tmap = getTranslationsForLang(lang)
