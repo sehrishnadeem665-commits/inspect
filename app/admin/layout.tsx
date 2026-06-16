@@ -104,7 +104,7 @@ export default function AdminLayout({
           }`}
         >
         <div className="flex items-center justify-between h-16 px-6 border-b border-gray-200">
-          <Link href="/admin/dashboard" className="flex items-center gap-2">\n            <img src="/logo.png" alt="True Inspectify" className="h-8 w-auto" />\n          </Link>
+          <Link href="/admin/dashboard" className="flex items-center gap-2">\n            <img src="/logo.png" alt="True Inspectify" className="h-6 w-auto" />\n          </Link>
           <button onClick={() => setIsSidebarOpen(false)} className="md:hidden text-gray-500">
             <X className="w-5 h-5" />
           </button>

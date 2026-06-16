@@ -44,7 +44,7 @@ export default function Header() {
                 alt="True Inspectify"
                 width={220}
                 height={48}
-                className="h-8 sm:h-10 lg:h-12 w-auto object-contain"
+                className="h-8 sm:h-10 lg:h-8 w-auto object-contain"
                 priority
               />
             </Link>
