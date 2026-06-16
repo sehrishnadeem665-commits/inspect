@@ -18,17 +18,15 @@ export default function Header() {
   }
 
   const navLink = (href: string) =>
-    `relative font-medium tracking-wide transition-all duration-300 group ${
-      isActiveLink(href)
-        ? 'text-[#b08a5a] rounded-full px-1 py-1'
-        : 'text-gray-700 hover:text-[#b08a5a]'
+    `relative font-medium tracking-wide transition-all duration-300 group ${isActiveLink(href)
+      ? 'text-[#b08a5a] rounded-full px-1 py-1'
+      : 'text-gray-700 hover:text-[#b08a5a]'
     }`
 
   const activeLine = (href: string) =>
-    `absolute left-0 -bottom-1 h-[2px] transition-all duration-300 ${
-      isActiveLink(href)
-        ? 'w-full bg-[#b08a5a]'
-        : 'w-0 bg-[#b08a5a] group-hover:w-full'
+    `absolute left-0 -bottom-1 h-[2px] transition-all duration-300 ${isActiveLink(href)
+      ? 'w-full bg-[#b08a5a]'
+      : 'w-0 bg-[#b08a5a] group-hover:w-full'
     }`
 
   return (
@@ -39,9 +37,12 @@ export default function Header() {
 
             {/* LOGO */}
             <Link href="/" className="flex items-center gap-2 max-w-[160px] sm:max-w-[220px] min-w-0">
-              <div className="text-xl sm:text-2xl lg:text-2xl font-extrabold bg-gradient-to-r from-black to-[#b08a5a] bg-clip-text text-transparent">
-                 TRUE INSPECTIFY
+              <div className="flex justify-between items-center">
+                <span className="text-1xl sm:text-2xl font-black tracking-tight uppercase bg-gradient-to-r from-black via-[#b08a5a] to-[#8c5a2a] bg-clip-text text-transparent">
+                  True Inspectify
+                </span>
               </div>
+
             </Link>
 
             {/* NAV */}
@@ -70,7 +71,7 @@ export default function Header() {
             {/* RIGHT SIDE */}
             <div className="flex items-center gap-3">
 
-                {/* MOBILE MENU */}
+              {/* MOBILE MENU */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition"
@@ -92,9 +93,14 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-[100] bg-white p-6">
           <div className="flex justify-between items-center mb-8">
-            <div className="text-lg sm:text-xl font-extrabold bg-gradient-to-r from-black to-[#b08a5a] bg-clip-text text-transparent">
-              TRUE INSPECTIFY
-            </div>
+            <Link href="/" className="flex items-center gap-2 max-w-[160px] sm:max-w-[220px] min-w-0">
+              <div className="flex justify-between items-center">
+                <span className="text-1xl sm:text-2xl font-black tracking-tight uppercase bg-gradient-to-r from-black via-[#b08a5a] to-[#8c5a2a] bg-clip-text text-transparent">
+                  True Inspectify
+                </span>
+              </div>
+
+            </Link>
             <button onClick={() => setIsMobileMenuOpen(false)}>
               <X />
             </button>
