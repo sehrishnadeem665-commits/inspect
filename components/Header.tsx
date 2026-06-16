@@ -39,14 +39,9 @@ export default function Header() {
 
             {/* LOGO */}
             <Link href="/" className="flex items-center gap-2 max-w-[160px] sm:max-w-[220px] min-w-0">
-              <Image
-                src="/logo.png"
-                alt="True Inspectify"
-                width={220}
-                height={48}
-                className="h-8 sm:h-10 lg:h-8 w-auto object-contain"
-                priority
-              />
+              <div className="text-xl sm:text-2xl lg:text-2xl font-extrabold bg-gradient-to-r from-black to-[#b08a5a] bg-clip-text text-transparent">
+                True Inspectify
+              </div>
             </Link>
 
             {/* NAV */}
@@ -97,13 +92,9 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-[100] bg-white p-6">
           <div className="flex justify-between items-center mb-8">
-            <Image
-              src="/logo.png"
-              alt="True Inspectify"
-              width={180}
-              height={36}
-              className="h-6 sm:h-8 w-auto object-contain"
-            />
+            <div className="text-lg sm:text-xl font-extrabold bg-gradient-to-r from-black to-[#b08a5a] bg-clip-text text-transparent">
+              TRUE INSPECTIFY
+            </div>
             <button onClick={() => setIsMobileMenuOpen(false)}>
               <X />
             </button>
