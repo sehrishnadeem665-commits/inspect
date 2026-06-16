@@ -40,7 +40,7 @@ export default function Header() {
             {/* LOGO */}
             <Link href="/" className="flex items-center gap-2 max-w-[160px] sm:max-w-[220px] min-w-0">
               <div className="text-xl sm:text-2xl lg:text-2xl font-extrabold bg-gradient-to-r from-black to-[#b08a5a] bg-clip-text text-transparent">
-                True Inspectify
+                 TRUE INSPECTIFY
               </div>
             </Link>
 
